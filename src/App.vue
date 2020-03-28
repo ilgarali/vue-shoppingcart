@@ -2,12 +2,23 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to="/cart">Cart {{cart.length > 0 ? (cart.length +' item(s)') : '' }} </router-link>
     </div>
-    <router-view/>
+    <transition enter-active-class="animated fadeInLeftBig" >
+      <router-view/>
+    </transition>
+  
   </div>
 </template>
+<script>
 
+import { mapState } from 'vuex'
+export default {
+  computed: {
+    ...mapState(['cart'])
+  },
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

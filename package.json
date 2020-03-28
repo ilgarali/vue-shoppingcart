@@ -9,7 +9,7 @@
     "start": "node server.js"
   },
   "engines": {
-    "node": "6.11.1"
+    "node": "v8.10.0"
   },
   "dependencies": {
     "animate.css": "^3.7.2",

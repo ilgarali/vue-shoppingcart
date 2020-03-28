@@ -8,6 +8,9 @@
     "lint": "vue-cli-service lint",
     "start": "node server.js"
   },
+  "engines": {
+    "node": "6.11.1"
+  },
   "dependencies": {
     "animate.css": "^3.7.2",
     "core-js": "^3.6.4",
